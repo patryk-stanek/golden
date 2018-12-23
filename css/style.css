@@ -6,17 +6,126 @@
   margin: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.clearfix,
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+.btn {
+  background-color: #fed233;
+  border: none;
+  border-radius: 5px;
+  padding: 2rem 4rem;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+
+.btn__link:link, .btn__link:visited {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.btn:hover, .btn:active {
+  background-color: #e5b407;
+}
+
+.u-margin-top-small {
+  margin-top: 2rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+.header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+}
+
+.header__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.header__text {
+  font-size: 5rem;
+  font-family: "Charm", cursive;
+}
+
+.nav {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 4rem;
+}
+
+.nav__logo {
+  font-family: "Great Vibes", cursive;
+  color: #fed233;
+  font-size: 3.2rem;
+}
+
+.nav__list {
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.nav__link:link, .nav__link:visited {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: all .2s ease-out;
+}
+
+.nav__link:link:hover, .nav__link:link:active, .nav__link:visited:hover, .nav__link:visited:active {
+  color: #fed233;
+}
+
+.heading-1 {
+  color: white;
+  font-size: 7rem;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

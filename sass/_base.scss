@@ -1,12 +1,33 @@
 //VAR
 
-$color-primary: rgb(254, 210, 51);
-$color-gray: rgb(247, 247, 247);
+$color-primary: #fed233;
+$color-primary-dark: #e5b407;
+$color-gray: #f7f7f7;
+$color-white: #fff;
 
 $font-primary: 'Roboto', sans-serif;
-$font-logo: 'Charm', cursive;
-$font-header: 'Great Vibes', cursive;
+$font-header: 'Charm', cursive;
+$font-logo: 'Great Vibes', cursive;
 $font-paragraph: 'Aleo', serif;
+
+//MIXINS
+
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin transition {
+    transition: all .2s ease-out;
+}
 
 //BASE
 
@@ -18,16 +39,46 @@ $font-paragraph: 'Aleo', serif;
     margin: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+}
+
 .container {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
 }
 
-.clearfix,
-.clearfix::before,
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+.btn {
+    background-color: $color-primary;
+    border: none;
+    border-radius: 5px;
+    padding: 2rem 4rem;
+    cursor: pointer;
+    @include transition;
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.6rem;
+    }
+
+    &:hover,
+    &:active {
+        background-color: $color-primary-dark;
+    }
 }
+
+//UTILITY
+
+.u-margin-top-small { margin-top: 2rem !important; }
+.u-margin-top-medium { margin-top: 4rem !important; }
+.u-margin-top-big { margin-top: 8rem !important; }
+.u-margin-top-huge { margin-top: 10rem !important; }

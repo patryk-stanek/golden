@@ -16,22 +16,5 @@ font-family: 'Charm', cursive;
 font-family: 'Roboto', sans-serif;
 font-family: 'Aleo', serif;
 
-.header {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/hero.png");
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-}
 
-<div class="container">
-                <nav class="nav">
-                    <span class="nav__logo">Golden</span>
-                </nav>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
+
