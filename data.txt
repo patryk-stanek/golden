@@ -15,6 +15,3 @@ font-family: 'Great Vibes', cursive;
 font-family: 'Charm', cursive;
 font-family: 'Roboto', sans-serif;
 font-family: 'Aleo', serif;
-
-
-

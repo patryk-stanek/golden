@@ -7,6 +7,9 @@ $grid-columns: 12;
     .col-offset-#{$i} {
         width: percentage($i / $grid-columns);
     }
+    .col-offset-left-#{$i} {
+        margin-left: percentage($i / $grid-columns);
+    }
 }
 
 @media (max-width: $break-l) {

@@ -1,0 +1,65 @@
+.about {
+    @include section-padding;
+    text-align: center;
+
+    &__timeline {
+        position: relative;
+        padding: 0;
+        margin: 0;
+
+        &::after {
+            content: "";
+            width: 3px;
+            background-color: $color-grey-1;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            z-index: -1;
+        }
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img,
+    &__circle {
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        border: 1rem solid $color-grey-1;
+        object-fit: cover;
+    }
+
+    &__text-right {
+        text-align: right;
+    }
+
+    &__text-left {
+        text-align: left;
+    }
+
+    &__circle {
+        background-color: $color-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    &__span {
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        text-shadow: 2px 2px 2px $color-primary-dark;
+    }
+
+    & [class*="col-"] {
+        padding: 0 !important;
+    }
+}

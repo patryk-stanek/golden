@@ -2,10 +2,6 @@
     text-align: center;
     @include section-padding;
 
-    &__box {
-        padding-bottom: 5rem;
-    }
-
     &__icon {
         color: $color-primary;
         font-size: 3.5rem;
