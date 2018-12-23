@@ -114,7 +114,6 @@ body {
 }
 
 .card {
-  cursor: pointer;
   transition: all .2s ease-out;
 }
 
@@ -492,6 +491,48 @@ body {
   line-height: 7rem;
 }
 
+.team {
+  padding: 12.5rem 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.team__img {
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team__link:link, .team__link:visited {
+  text-decoration: none;
+}
+
+.team__link:link:not(:last-child), .team__link:visited:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.team__icon {
+  color: #000000;
+  font-size: 2.2rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 4.3rem;
+  border-radius: 50%;
+  border: 4px solid #000000;
+  transition: all .2s ease-out;
+}
+
+.team__icon:hover, .team__icon:active {
+  background-color: #000000;
+  color: #fed233;
+}
+
+.team__text {
+  padding: 0 20rem;
+}
+
 .heading-1,
 .heading-2,
 .heading-4 {
@@ -515,14 +556,16 @@ body {
 
 .paragraph-1,
 .paragraph-2,
-.paragraph-3 {
+.paragraph-3,
+.paragraph-4 {
   font-family: "Aleo", serif;
   color: #999;
 }
 
-.paragraph-1 {
+.paragraph-1,
+.paragraph-4 {
   font-size: 1.8rem;
-  font-style: italic;
+  line-height: 2.5rem;
 }
 
 .paragraph-2,
@@ -531,12 +574,13 @@ body {
   line-height: 2.1rem;
 }
 
+.paragraph-1,
 .paragraph-3 {
   font-style: italic;
 }
 
 .u-margin-top {
-  margin-top: 1rem !important;
+  margin-top: 1.3rem !important;
 }
 
 .u-margin-top-small {
@@ -560,7 +604,7 @@ body {
 }
 
 .u-margin-bottom {
-  margin-bottom: 1rem !important;
+  margin-bottom: 1.3rem !important;
 }
 
 .u-margin-bottom-small {

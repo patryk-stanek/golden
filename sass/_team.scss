@@ -1,0 +1,46 @@
+.team {
+    @include section-padding;
+    background-color: $color-grey-1;
+    text-align: center;
+
+    &__img {
+        width: 28rem;
+        height: 28rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__box {
+
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__icon {
+        color: $color-black;
+        font-size: 2.2rem;
+        width: 5rem;
+        height: 5rem;
+        line-height: 4.3rem;
+        border-radius: 50%;
+        border: 4px solid $color-black;
+        @include transition;
+
+        &:hover,
+        &:active {
+            background-color: $color-black;
+            color: $color-primary;
+        }
+    }
+
+    &__text {
+        padding: 0 20rem;
+    }
+}
