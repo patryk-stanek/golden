@@ -1,0 +1,33 @@
+//VAR
+
+$color-primary: rgb(254, 210, 51);
+$color-gray: rgb(247, 247, 247);
+
+$font-primary: 'Roboto', sans-serif;
+$font-logo: 'Charm', cursive;
+$font-header: 'Great Vibes', cursive;
+$font-paragraph: 'Aleo', serif;
+
+//BASE
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clearfix,
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
