@@ -26,15 +26,15 @@ body {
     border-radius: 5px;
     padding: 2rem 4rem;
     cursor: pointer;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
     @include transition;
 
     &__link:link,
     &__link:visited {
         text-decoration: none;
-        color: $color-white;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1.6rem;
     }
 
     &:hover,

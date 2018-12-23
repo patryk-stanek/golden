@@ -1,17 +1,23 @@
 .heading-1,
 .heading-2,
+.heading-2-white,
 .heading-4 {
     text-transform: uppercase;
 }
 
 .heading-1 {
-    color: white;
+    color: $color-white;
     font-size: 7rem;
 }
 
-.heading-2 {
+.heading-2,
+.heading-2-white {
     font-size: 4.5rem;
     margin-bottom: 1rem;
+}
+
+.heading-2-white {
+    color: $color-white;
 }
 
 .heading-3,
