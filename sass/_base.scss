@@ -1,36 +1,3 @@
-//VAR
-
-$color-primary: #fed233;
-$color-primary-dark: #e5b407;
-$color-gray: #f7f7f7;
-$color-white: #fff;
-
-$font-primary: 'Roboto', sans-serif;
-$font-header: 'Charm', cursive;
-$font-logo: 'Great Vibes', cursive;
-$font-paragraph: 'Aleo', serif;
-
-//MIXINS
-
-@mixin clearfix {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@mixin center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@mixin transition {
-    transition: all .2s ease-out;
-}
-
-//BASE
-
 *,
 *::before,
 *::after {
@@ -75,10 +42,3 @@ body {
         background-color: $color-primary-dark;
     }
 }
-
-//UTILITY
-
-.u-margin-top-small { margin-top: 2rem !important; }
-.u-margin-top-medium { margin-top: 4rem !important; }
-.u-margin-top-big { margin-top: 8rem !important; }
-.u-margin-top-huge { margin-top: 10rem !important; }
