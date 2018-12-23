@@ -426,6 +426,26 @@ body {
   font-family: "Charm", cursive;
 }
 
+.logotypes {
+  padding: 6rem 0;
+}
+
+.logotypes .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.logotypes__img {
+  width: auto;
+  height: 100%;
+}
+
 .nav {
   width: 100%;
   display: -ms-flexbox;
