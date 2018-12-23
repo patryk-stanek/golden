@@ -107,6 +107,7 @@ body {
 
 .btn__link:link, .btn__link:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 .btn:hover, .btn:active {
