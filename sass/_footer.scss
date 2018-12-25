@@ -57,9 +57,11 @@
         border-radius: 50%;
         @include transition;
 
-        &:hover,
-        &:active {
-            color: $color-primary;
+        @include respond(hover) {
+            &:hover,
+            &:active {
+                color: $color-primary;
+            }
         }
     }
 }

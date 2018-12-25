@@ -13,8 +13,9 @@ $font-paragraph: 'Aleo', serif;
 
 $break-xl: 1200px;
 $break-l: 991px;
-$break-s: 767px;
-$break-xs: 576px;
+$break-m: 767px;
+$break-s: 576px;
+$break-xs: 320px;
 
 @mixin clearfix {
     content: "";
@@ -51,10 +52,16 @@ $break-xs: 576px;
     @if $breakpoint == break-s {
         @media only screen and (max-width: $break-s) { @content };
     }
+    @if $breakpoint == break-m {
+        @media only screen and (max-width: $break-m) { @content };
+    }
     @if $breakpoint == break-l {
         @media only screen and (max-width: $break-l) { @content };
     }
     @if $breakpoint == break-xl {
         @media only screen and (max-width: $break-xl) { @content };
+    }
+    @if $breakpoint == hover {
+        @media only screen and (min-width: $break-xl) { @content };
     }
 }

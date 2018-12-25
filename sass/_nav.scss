@@ -8,10 +8,18 @@
         padding: 4rem 2rem 0;
     }
 
+    @include respond(break-m) {
+        flex-direction: column;
+    }
+
     &__logo {
         font-family: $font-logo;
         color: $color-primary;
         font-size: 3.2rem;
+
+        @include respond(break-m) {
+            margin-bottom: 2rem;;
+        }
     }
 
     &__list {
@@ -35,9 +43,11 @@
         letter-spacing: 1px;
         @include transition;
 
-        &:hover,
-        &:active {
-            color: $color-primary;
+        @include respond(hover) {
+            &:hover,
+            &:active {
+                color: $color-primary;
+            }
         }
     }
 }

@@ -163,8 +163,10 @@ body {
   color: inherit;
 }
 
-.btn:hover, .btn:active {
-  background-color: #e5b407;
+@media only screen and (min-width: 1200px) {
+  .btn:hover, .btn:active {
+    background-color: #e5b407;
+  }
 }
 
 .card {
@@ -195,8 +197,10 @@ body {
   }
 }
 
-.card__container:hover, .card__container:active {
-  transform: scale(1.05);
+@media only screen and (min-width: 1200px) {
+  .card__container:hover, .card__container:active {
+    transform: scale(1.05);
+  }
 }
 
 .card__img {
@@ -381,8 +385,10 @@ textarea {
   transition: all .2s ease-out;
 }
 
-.footer__icon:hover, .footer__icon:active {
-  color: #fed233;
+@media only screen and (min-width: 1200px) {
+  .footer__icon:hover, .footer__icon:active {
+    color: #fed233;
+  }
 }
 
 .col-1 {
@@ -568,7 +574,7 @@ textarea {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .col-s-1 {
     width: 8.33333%;
   }
@@ -607,7 +613,7 @@ textarea {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 320px) {
   .col-x-1 {
     width: 8.33333%;
   }
@@ -687,6 +693,12 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .header__text {
+    font-size: 3rem;
+  }
+}
+
 .logotypes {
   padding: 6rem 0;
 }
@@ -702,9 +714,22 @@ textarea {
       align-items: center;
 }
 
+@media only screen and (max-width: 767px) {
+  .logotypes .container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 .logotypes__img {
   width: auto;
   height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .logotypes__img {
+    margin: 1rem 0;
+  }
 }
 
 .nav {
@@ -728,10 +753,23 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .nav {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 .nav__logo {
   font-family: "Great Vibes", cursive;
   color: #fed233;
   font-size: 3.2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav__logo {
+    margin-bottom: 2rem;
+  }
 }
 
 .nav__list {
@@ -755,8 +793,10 @@ textarea {
   transition: all .2s ease-out;
 }
 
-.nav__link:link:hover, .nav__link:link:active, .nav__link:visited:hover, .nav__link:visited:active {
-  color: #fed233;
+@media only screen and (min-width: 1200px) {
+  .nav__link:link:hover, .nav__link:link:active, .nav__link:visited:hover, .nav__link:visited:active {
+    color: #fed233;
+  }
 }
 
 .portfolio {
@@ -864,9 +904,11 @@ textarea {
   transition: all .2s ease-out;
 }
 
-.team__icon:hover, .team__icon:active {
-  background-color: #000000;
-  color: #fed233;
+@media only screen and (min-width: 1200px) {
+  .team__icon:hover, .team__icon:active {
+    background-color: #000000;
+    color: #fed233;
+  }
 }
 
 .team__text {

@@ -45,8 +45,10 @@ body {
         color: inherit;
     }
 
-    &:hover,
-    &:active {
-        background-color: $color-primary-dark;
+    @include respond(hover) {
+        &:hover,
+        &:active {
+            background-color: $color-primary-dark;
+        }
     }
 }

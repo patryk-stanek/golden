@@ -6,10 +6,18 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
+        @include respond(break-m) {
+            flex-direction: column;
+        }
     }
 
     &__img {
         width: auto;
         height: 100%;
+
+        @include respond(break-m) {
+            margin: 1rem 0;;
+        }
     }
 }

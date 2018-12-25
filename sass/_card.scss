@@ -12,9 +12,11 @@
             flex-basis: percentage(1 / 2);
         }
 
-        &:hover,
-        &:active {
-            transform: scale(1.05);
+        @include respond(hover) {
+            &:hover,
+            &:active {
+                transform: scale(1.05);
+            }
         }
     }
 

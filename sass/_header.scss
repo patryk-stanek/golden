@@ -18,5 +18,9 @@
         @include respond(break-xl) {
             font-size: 4rem;
         }
+
+        @include respond(break-m) {
+            font-size: 3rem;
+        }
     }
 }

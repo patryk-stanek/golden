@@ -17,7 +17,7 @@
         font-size: 5.5rem;
     }
 
-    @include respond(break-s) {
+    @include respond(break-m) {
         font-size: 4rem;
     }
 }
@@ -31,7 +31,7 @@
         font-size: 4rem;
     }
 
-    @include respond(break-s) {
+    @include respond(break-m) {
         font-size: 3rem;
     }
 }
@@ -48,7 +48,7 @@
         font-size: 2rem;
     }
 
-    @include respond(break-s) {
+    @include respond(break-m) {
         font-size: 1.7rem;
     }
 }
@@ -70,7 +70,7 @@
         font-size: 1.5rem;
     }
 
-    @include respond(break-s) {
+    @include respond(break-m) {
         font-size: 1.4rem;
     }
 }
@@ -84,7 +84,7 @@
         font-size: 1.4rem;
     }
 
-    @include respond(break-s) {
+    @include respond(break-m) {
         font-size: 1.2rem;
     }
 }
