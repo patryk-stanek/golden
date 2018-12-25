@@ -658,6 +658,12 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .nav__link:link, .nav__link:visited {
+    font-size: 1.8rem;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .nav__link:link, .nav__link:visited {
     color: #fed233;
@@ -666,12 +672,6 @@ textarea {
     width: 100%;
     padding: 1rem 0;
     display: block;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .nav__link:link, .nav__link:visited {
-    font-size: 1.8rem;
   }
 }
 

@@ -69,6 +69,10 @@
             }
         }
 
+        @include respond(break-m) {
+            font-size: 1.8rem;
+        }
+
         @include respond(break-s) {
             color: $color-primary;
             font-size: 2rem;
@@ -76,10 +80,6 @@
             width: 100%;
             padding: 1rem 0;
             display: block;
-        }
-
-        @include respond(break-m) {
-            font-size: 1.8rem;
         }
     }
 }
