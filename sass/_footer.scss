@@ -1,28 +1,40 @@
 .footer {
-    padding: 4rem 0;
+    padding: 3rem 0;
     color: $color-grey-2;
     font-size: 1.4rem;
     font-weight: 700;
 
-    &__container {
+    &__box {
         @include flexbox;
         align-items: center;
         justify-content: space-between;
+
+        @include respond(break-l) {
+            flex-direction: column;
+        }
     }
 
     &__text {
         flex-grow: 1;
+
+        @include respond(break-l) {
+            margin-bottom: 3rem;
+        }
     }
 
-    &__box {
+    &__social {
         flex-grow: 1;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-    &__empty {
+    &__filler {
         flex-grow: 3;
+
+        @include respond(break-l) {
+            display: none;
+        }
     }
 
     &__link:link,

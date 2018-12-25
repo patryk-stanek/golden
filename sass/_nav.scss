@@ -4,7 +4,7 @@
     align-items: center;
     padding-top: 4rem;
 
-    @include respond(big-desktop) {
+    @include respond(break-xl) {
         padding: 4rem 2rem 0;
     }
 

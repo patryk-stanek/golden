@@ -14,7 +14,7 @@ $font-paragraph: 'Aleo', serif;
 $break-xl: 1200px;
 $break-l: 991px;
 $break-s: 767px;
-$break-xs: 320px;
+$break-xs: 576px;
 
 @mixin clearfix {
     content: "";
@@ -45,16 +45,16 @@ $break-xs: 320px;
 }
 
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
+    @if $breakpoint == break-xs {
         @media only screen and (max-width: $break-xs) { @content };
     }
-    @if $breakpoint == tab-port {
+    @if $breakpoint == break-s {
         @media only screen and (max-width: $break-s) { @content };
     }
-    @if $breakpoint == tab-land {
+    @if $breakpoint == break-l {
         @media only screen and (max-width: $break-l) { @content };
     }
-    @if $breakpoint == big-desktop {
+    @if $breakpoint == break-xl {
         @media only screen and (max-width: $break-xl) { @content };
     }
 }

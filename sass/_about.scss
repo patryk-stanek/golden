@@ -16,16 +16,46 @@
             bottom: 0;
             left: 50%;
             z-index: -1;
+
+            @include respond(break-l) {
+                display: none;
+            }
         }
     }
 
     &__box {
-        display: flex;
+        @include flexbox;
         align-items: center;
+        justify-content: space-around;
+    }
+
+    &__text {
+        flex-basis: percentage(1 / 3);
+        flex-grow: 1;
+        padding: 0 4rem;
+
+        &--right {
+            text-align: right;
+        }
+
+        &--left {
+            text-align: left;
+        }
+    }
+
+    &__filler {
+        flex-basis: percentage(1 / 3);
+        flex-grow: 1;
+
+        @include respond(break-l) {
+            display: none;
+        }
     }
 
     &__img,
     &__circle {
+        // flex-basis: percentage(1 / 3);
+        // flex-grow: 1;
         width: 25rem;
         height: 25rem;
         border-radius: 50%;

@@ -19,8 +19,8 @@ body {
     max-width: 1140px;
     margin: 0 auto;
 
-    @include respond(big-desktop) {
-        padding: 0 2rem;;
+    @include respond(break-xl) {
+        padding: 0 2rem;
     }
 }
 
@@ -35,7 +35,7 @@ body {
     font-weight: 700;
     @include transition;
 
-    @include respond(big-desktop) {
+    @include respond(break-xl) {
         padding: 1.8rem 3.6rem;
     }
 

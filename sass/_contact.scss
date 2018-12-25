@@ -8,16 +8,30 @@
     &__box {
         display: flex;
         flex-direction: row;
+
+        @include respond(break-l) {
+            flex-direction: column;
+        }
     }
 
     &__left {
         width: 50%;
         margin-right: 2rem;
+
+        @include respond(break-l) {
+            width: 100%;
+            margin-right: 0;
+        }
     }
 
     &__right {
         width: 50%;
         margin-left: 2rem;
+
+        @include respond(break-l) {
+            width: 100%;
+            margin-left: 0;
+        }
     }
 }
 
@@ -41,10 +55,19 @@ input {
 
     &:not(:last-of-type) {
         margin-bottom: 4rem;
+
+        @include respond(break-l) {
+            margin-bottom: 1rem;
+        }
     }
 }
 
 textarea {
     height: 100%;
     resize: none;
+
+    @include respond(break-l) {
+        margin-top: 1rem;
+        height: 20rem;
+    }
 }

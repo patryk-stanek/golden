@@ -15,7 +15,7 @@
         font-size: 5rem;
         font-family: $font-header;
 
-        @include respond(big-desktop) {
+        @include respond(break-xl) {
             font-size: 4rem;
         }
     }
