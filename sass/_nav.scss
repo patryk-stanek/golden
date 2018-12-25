@@ -37,6 +37,10 @@
         &:not(:last-child) {
             margin-right: 3rem;
 
+            @include respond(break-m) {
+                margin-right: 1.5rem;
+            }
+
             @include respond(break-s) {
                 margin-right: 0;
             }
@@ -75,7 +79,7 @@
         }
 
         @include respond(break-m) {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
 }
