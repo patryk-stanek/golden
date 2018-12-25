@@ -4,6 +4,10 @@
     background-position: center;
     height: 90vh;
     position: relative;
+    
+    @include respond(break-m) {
+        height: 100vh;
+    }
 
     &__box {
         @include center;
@@ -21,6 +25,10 @@
 
         @include respond(break-m) {
             font-size: 3rem;
+        }
+
+        @include respond(break-s) {
+            font-size: 2.5rem;
         }
     }
 }

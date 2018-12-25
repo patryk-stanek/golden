@@ -39,6 +39,10 @@ body {
         padding: 1.8rem 3.6rem;
     }
 
+    @include respond(break-s) {
+        padding: 1.3rem 3rem;
+    }
+
     &__link:link,
     &__link:visited {
         text-decoration: none;

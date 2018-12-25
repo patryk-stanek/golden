@@ -12,6 +12,10 @@
             flex-basis: percentage(1 / 2);
         }
 
+        @include respond(break-s) {
+            flex-basis: 100%;
+        }
+
         @include respond(hover) {
             &:hover,
             &:active {

@@ -9,16 +9,27 @@
         <title>Golden</title>
     </head>
     <body>
+        <div class="hidden">
+            <input type="checkbox" id="menu">
+            <label for="menu" class="hidden__toggle"><i class="hidden__icon fas fa-bars"></i></label>
+            <ul class="hidden__menu">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
         <header class="header">
             <div class="container">
                 <nav class="nav">
                     <span class="nav__logo">Golden</span>
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header__box">
@@ -28,7 +39,7 @@
                 </div>
             </div>
         </header>
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <h2 class="heading-2">Services</h2>
                 <p class="paragraph-1 u-margin-bottom-medium">Lorem ipsum dolor sit amet.</p>
@@ -51,7 +62,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <h2 class="heading-2">Our portfolio</h2>
                 <p class="paragraph-1">Lorem ipsum dolor, sit amet consectetur.</p>
@@ -101,7 +112,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2 class="heading-2">About us</h2>
                 <p class="paragraph-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -263,7 +274,7 @@
                 <img src="images/logo-4.png" alt="logo-4" class="logotypes__img">
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <h2 class="heading-2-white">Contact us</h2>
                 <p class="paragraph-1">Proin iaculis purus consequat sem cure.</p>
@@ -274,7 +285,7 @@
                         <input type="text" id="subject" placeholder="Subject" minlength="3" required>
                     </div>
                     <div class="contact__right">
-                        <textarea type="message" placeholder="Your message *"></textarea>
+                        <textarea placeholder="Your message *"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn u-margin-top-medium">Send message</button>

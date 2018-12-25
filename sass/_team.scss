@@ -21,6 +21,11 @@
         height: 28rem;
         border-radius: 50%;
         object-fit: cover;
+
+        @include respond(break-s) {
+            width: 20rem;
+            height: 20rem;
+        }
     }
 
     &__link:link,
@@ -55,5 +60,13 @@
 
     &__text {
         padding: 0 20rem;
+
+        @include respond(break-m) {
+            padding: 0 10rem;
+        }
+
+        @include respond(break-s) {
+            padding: 0 1rem;
+        }
     }
 }

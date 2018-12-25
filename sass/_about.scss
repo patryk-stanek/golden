@@ -27,6 +27,10 @@
         @include flexbox;
         align-items: center;
         justify-content: space-around;
+
+        @include respond(break-s) {
+            flex-direction: column;
+        }
     }
 
     &__text {
@@ -36,10 +40,22 @@
 
         &--right {
             text-align: right;
+
+            @include respond(break-s) {
+                text-align: center;
+            }
         }
 
         &--left {
             text-align: left;
+
+            @include respond(break-s) {
+                text-align: center;
+            }
+        }
+
+        @include respond(break-s) {
+            order: 1;
         }
     }
 
@@ -59,14 +75,12 @@
         border-radius: 50%;
         border: 1rem solid $color-grey-1;
         object-fit: cover;
-    }
 
-    &__text-right {
-        text-align: right;
-    }
-
-    &__text-left {
-        text-align: left;
+        @include respond(break-s) {
+            order: 0;
+            width: 15rem;
+            height: 15rem;
+        }
     }
 
     &__circle {
@@ -85,6 +99,11 @@
         font-size: 2.5rem;
         line-height: 3.5rem;
         text-shadow: 2px 2px 2px $color-primary-dark;
+
+        @include respond(break-s) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
     }
 
     & [class*="col-"] {

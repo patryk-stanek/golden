@@ -18,12 +18,17 @@
         font-size: 3.2rem;
 
         @include respond(break-m) {
-            margin-bottom: 2rem;;
+            margin-bottom: 2rem;
+            font-size: 4rem;
         }
     }
 
     &__list {
         list-style: none;
+
+        @include respond(break-s) {
+            display: none;
+        }
     }
 
     &__item {
@@ -31,13 +36,23 @@
 
         &:not(:last-child) {
             margin-right: 3rem;
+
+            @include respond(break-s) {
+                margin-right: 0;
+            }
+        }
+
+        @include respond(break-s) {
+            display: block;
+            text-align: center;
+            margin-top: .5rem;
         }
     }
 
     &__link:link,
     &__link:visited {
         text-decoration: none;
-        color: white;
+        color: $color-white;
         text-transform: uppercase;
         font-size: 1.5rem;
         letter-spacing: 1px;
@@ -49,5 +64,59 @@
                 color: $color-primary;
             }
         }
+
+        @include respond(break-s) {
+            color: $color-primary;
+            font-size: 2rem;
+            border-bottom: 1px solid $color-primary;
+            width: 100%;
+            padding: 1rem 0;
+            display: block;
+        }
+
+        @include respond(break-m) {
+            font-size: 2rem;
+        }
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .hidden__menu {
+    display: block;
+}
+
+.hidden {
+
+    &__toggle {
+        display: none;
+
+        @include respond(break-s) {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 200;
+        }
+    }
+
+    &__icon {
+        color: $color-primary;
+        width: 5rem;
+        height: 5rem;
+        font-size: 3rem;
+        line-height: 5rem;
+        text-align: center;
+    }
+
+    &__menu {
+        @include transition;
+        display: none;
+        top: 0;
+        background-color: $color-black;
+        width: 100%;
+        overflow: hidden;
     }
 }

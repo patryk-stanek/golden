@@ -20,6 +20,10 @@
     @include respond(break-m) {
         font-size: 4rem;
     }
+
+    @include respond(break-s) {
+        font-size: 3.2rem;
+    }
 }
 
 .heading-2,
@@ -99,5 +103,9 @@
 
     @include respond(break-xl) {
         font-size: 1.5rem;
+    }
+
+    @include respond(break-s) {
+        font-size: 1.2rem;
     }
 }

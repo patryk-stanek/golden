@@ -17,34 +17,6 @@ $break-m: 767px;
 $break-s: 576px;
 $break-xs: 320px;
 
-@mixin clearfix {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@mixin center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@mixin transition {
-    transition: all .2s ease-out;
-}
-
-@mixin section-padding {
-    padding: 12.5rem 0;
-}
-
-@mixin flexbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
 @mixin respond($breakpoint) {
     @if $breakpoint == break-xs {
         @media only screen and (max-width: $break-xs) { @content };
@@ -64,4 +36,44 @@ $break-xs: 320px;
     @if $breakpoint == hover {
         @media only screen and (min-width: $break-xl) { @content };
     }
+}
+
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin transition {
+    transition: all .2s ease-out;
+}
+
+@mixin section-padding {
+    padding: 12.5rem 0;
+
+    @include respond(break-l) {
+        padding: 10rem 0;
+    }
+
+    @include respond(break-m) {
+        padding: 8rem 0;
+    }
+
+    @include respond(break-s) {
+        padding: 6.5rem 0;
+    }
+}
+
+@mixin flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
