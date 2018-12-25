@@ -6,6 +6,10 @@
     align-items: center;
     padding-top: 4rem;
 
+    @include respond(big-desktop) {
+        padding: 4rem 2rem 0;
+    }
+
     &__logo {
         font-family: $font-logo;
         color: $color-primary;

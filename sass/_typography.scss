@@ -8,12 +8,20 @@
 .heading-1 {
     color: $color-white;
     font-size: 7rem;
+
+    @include respond(big-desktop) {
+        font-size: 6rem;
+    }
 }
 
 .heading-2,
 .heading-2-white {
     font-size: 4.5rem;
     margin-bottom: 1rem;
+
+    @include respond(big-desktop) {
+        font-size: 4rem;
+    }
 }
 
 .heading-2-white {
@@ -23,6 +31,10 @@
 .heading-3,
 .heading-4 {
     font-size: 2.2rem;
+
+    @include respond(big-desktop) {
+        font-size: 2rem;
+    }
 }
 
 .paragraph-1,
@@ -37,15 +49,31 @@
 .paragraph-4 {
     font-size: 1.8rem;
     line-height: 2.5rem;
+
+    @include respond(big-desktop) {
+        font-size: 1.5rem;
+    }
 }
 
 .paragraph-2,
 .paragraph-3 {
     font-size: 1.6rem;
     line-height: 2.1rem;
+
+    @include respond(big-desktop) {
+        font-size: 1.4rem;
+    }
 }
 
 .paragraph-1,
 .paragraph-3 {
     font-style: italic;
+}
+
+.btn {
+    font-size: 1.6rem;
+
+    @include respond(big-desktop) {
+        font-size: 1.5rem;
+    }
 }

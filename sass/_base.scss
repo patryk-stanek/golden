@@ -18,6 +18,10 @@ body {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
+
+    @include respond(big-desktop) {
+        padding: 0 2rem;;
+    }
 }
 
 .btn {
@@ -29,8 +33,11 @@ body {
     color: $color-white;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.6rem;
     @include transition;
+
+    @include respond(big-desktop) {
+        padding: 1.8rem 3.6rem;
+    }
 
     &__link:link,
     &__link:visited {

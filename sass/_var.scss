@@ -36,3 +36,18 @@ $break-xs: 320px;
 @mixin section-padding {
     padding: 12.5rem 0;
 }
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: $break-xs) { @content };
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: $break-s) { @content };
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: $break-l) { @content };
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (max-width: $break-xl) { @content };
+    }
+}
