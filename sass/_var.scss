@@ -37,6 +37,13 @@ $break-xs: 320px;
     padding: 12.5rem 0;
 }
 
+@mixin flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
         @media only screen and (max-width: $break-xs) { @content };

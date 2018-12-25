@@ -2,6 +2,14 @@
     text-align: center;
     @include section-padding;
 
+    &__container {
+        @include flexbox;
+    }
+
+    &__box {
+        flex-basis: percentage($number: 1 / 3);
+    }
+
     &__icon {
         color: $color-primary;
         font-size: 3.5rem;

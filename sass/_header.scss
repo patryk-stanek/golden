@@ -14,5 +14,9 @@
     &__text {
         font-size: 5rem;
         font-family: $font-header;
+
+        @include respond(big-desktop) {
+            font-size: 4rem;
+        }
     }
 }

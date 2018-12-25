@@ -1,5 +1,18 @@
 .card {
-    @include transition;
+    @include flexbox;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        @include transition;
+        flex-basis: percentage(1 / 3);
+        padding: 2rem;
+
+        &:hover,
+        &:active {
+            transform: scale(1.05);
+        }
+    }
 
     &__img {
         width: 100%;
@@ -8,10 +21,5 @@
     &__box {
         background-color: $color-white;
         padding: 2rem 0;
-    }
-
-    &:hover,
-    &:active {
-        transform: scale(1.05);
     }
 }
