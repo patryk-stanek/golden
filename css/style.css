@@ -180,6 +180,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+*:focus,
+button:focus {
+  outline: 0;
+}
+
 .container {
   width: 100%;
   max-width: 1140px;
@@ -192,7 +197,8 @@ body {
   }
 }
 
-.btn {
+.btn:link,
+.btn:visited {
   background-color: #fed233;
   border: none;
   border-radius: 5px;
@@ -201,28 +207,29 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
+  text-decoration: none;
+  color: inherit;
   transition: all .2s ease-out;
 }
 
 @media only screen and (max-width: 1200px) {
-  .btn {
+  .btn:link,
+  .btn:visited {
     padding: 1.8rem 3.6rem;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .btn {
+  .btn:link,
+  .btn:visited {
     padding: 1.3rem 3rem;
   }
 }
 
-.btn__link:link, .btn__link:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
 @media only screen and (min-width: 1200px) {
-  .btn:hover, .btn:active {
+  .btn:link:hover, .btn:link:active,
+  .btn:visited:hover,
+  .btn:visited:active {
     background-color: #e5b407;
   }
 }

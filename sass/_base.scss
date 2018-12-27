@@ -14,6 +14,11 @@ body {
     font-family: $font-primary;
 }
 
+*:focus,
+button:focus {
+    outline: 0;
+}
+
 .container {
     width: 100%;
     max-width: 1140px;
@@ -24,7 +29,8 @@ body {
     }
 }
 
-.btn {
+.btn:link,
+.btn:visited {
     background-color: $color-primary;
     border: none;
     border-radius: 5px;
@@ -33,6 +39,8 @@ body {
     color: $color-white;
     text-transform: uppercase;
     font-weight: 700;
+    text-decoration: none;
+    color: inherit;
     @include transition;
 
     @include respond(break-xl) {
@@ -41,12 +49,6 @@ body {
 
     @include respond(break-s) {
         padding: 1.3rem 3rem;
-    }
-
-    &__link:link,
-    &__link:visited {
-        text-decoration: none;
-        color: inherit;
     }
 
     @include respond(hover) {
