@@ -23,12 +23,9 @@ button:focus {
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
-
-    @include respond(break-xl) {
-        padding: 0 2rem;
-    }
 }
 
+.btn,
 .btn:link,
 .btn:visited {
     background-color: $color-primary;
@@ -40,7 +37,6 @@ button:focus {
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
-    color: inherit;
     @include transition;
 
     @include respond(break-xl) {

@@ -9,6 +9,7 @@
         <title>Golden</title>
     </head>
     <body>
+        <header class="header">
         <div class="hidden">
             <input type="checkbox" id="menu">
             <label for="menu" class="hidden__toggle"><i class="hidden__icon fas fa-bars"></i></label>
@@ -20,45 +21,40 @@
                 <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </div>
-        <header class="header">
-            <div class="container">
-                <nav class="nav">
-                    <span class="nav__logo">Golden</span>
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header__box">
-                    <span class="header__text">Welcome To Our Studio!</span>
-                    <h1 class="heading-1 u-margin-bottom-medium">It's nice to meet You</h1>
-                    <a href="#" class="btn">Tell me more</a>
-                </div>
+            <nav class="nav container">
+                <span class="nav__logo">Golden</span>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__box">
+                <span class="header__text">Welcome To Our Studio!</span>
+                <h1 class="heading-1 u-margin-bottom-medium">It's nice to meet You</h1>
+                <a href="#" class="btn">Tell me more</a>
             </div>
         </header>
-        <section class="services" id="services">
-            <div class="container">
-                <h2 class="heading-2">Services</h2>
-                <p class="paragraph-1 u-margin-bottom-medium">Lorem ipsum dolor sit amet.</p>
-                <div class="services__container">
-                    <div class="services__box">
-                        <i class="services__icon fas fa-shopping-basket u-margin-bottom-small"></i>
-                        <h3 class="heading-3 u-margin-bottom-small">E-Commerce</h3>
-                        <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorem provident. Corporis consequuntur aspernatur, veniam, totam praesentium quae sit.</p>
-                    </div>
-                    <div class="services__box">
-                        <i class="services__icon fas fa-laptop u-margin-bottom-small"></i>
-                        <h3 class="heading-3 u-margin-bottom-small">Responsive Web</h3>
-                        <p class="paragraph-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ex officiis similique harum, id blanditiis minima at laudantium voluptas exercitationem quibusdam.</p>
-                    </div>
-                    <div class="services__box">
-                        <i class="services__icon fas fa-lock u-margin-bottom-small"></i>
-                        <h3 class="heading-3 u-margin-bottom-small">Web Security</h3>
-                        <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis autem deleniti at, commodi impedit, harum quidem nihil, ipsam laborum eligendi maxime.</p>
-                    </div>
+        <section class="services container" id="services">
+            <h2 class="heading-2">Services</h2>
+            <p class="paragraph-1 u-margin-bottom-medium">Lorem ipsum dolor sit amet.</p>
+            <div class="services__container">
+                <div class="services__box">
+                    <i class="services__icon fas fa-shopping-basket u-margin-bottom-small"></i>
+                    <h3 class="heading-3 u-margin-bottom-small">E-Commerce</h3>
+                    <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolorem provident. Corporis consequuntur aspernatur, veniam, totam praesentium quae sit.</p>
+                </div>
+                <div class="services__box">
+                    <i class="services__icon fas fa-laptop u-margin-bottom-small"></i>
+                    <h3 class="heading-3 u-margin-bottom-small">Responsive Web</h3>
+                    <p class="paragraph-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, ex officiis similique harum, id blanditiis minima at laudantium voluptas exercitationem quibusdam.</p>
+                </div>
+                <div class="services__box">
+                    <i class="services__icon fas fa-lock u-margin-bottom-small"></i>
+                    <h3 class="heading-3 u-margin-bottom-small">Web Security</h3>
+                    <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis autem deleniti at, commodi impedit, harum quidem nihil, ipsam laborum eligendi maxime.</p>
                 </div>
             </div>
         </section>
@@ -67,102 +63,99 @@
                 <h2 class="heading-2">Our portfolio</h2>
                 <p class="paragraph-1">Lorem ipsum dolor, sit amet consectetur.</p>
                 <div class="card u-margin-top-medium">
-                        <div class="card__container">
-                            <img src="images/card-1.png" alt="card__img_1" class="card__img">
-                            <div class="card__box">
-                                <h3 class="heading-3">Ebony & Ivory</h3>
-                                <p class="paragraph-3">Branding</p>
-                            </div>
+                    <div class="card__container">
+                        <img src="images/card-1.png" alt="card__img_1" class="card__img">
+                        <div class="card__box">
+                            <h3 class="heading-3">Ebony & Ivory</h3>
+                            <p class="paragraph-3">Branding</p>
                         </div>
-                        <div class="card__container">
-                            <img src="images/card-2.png" alt="card__img-2" class="card__img">
-                            <div class="card__box">
-                                <h3 class="heading-3">Smart Stationary</h3>
-                                <p class="paragraph-3">Print Design</p>
-                            </div>
+                    </div>
+                    <div class="card__container">
+                        <img src="images/card-2.png" alt="card__img-2" class="card__img">
+                        <div class="card__box">
+                            <h3 class="heading-3">Smart Stationary</h3>
+                            <p class="paragraph-3">Print Design</p>
                         </div>
-                        <div class="card__container">
-                            <img src="images/card-3.png" alt="card__img-3" class="card__img">
-                            <div class="card__box">
-                                <h3 class="heading-3">Clever Poster</h3>
-                                <p class="paragraph-3">Print Design</p>
-                            </div>
+                    </div>
+                    <div class="card__container">
+                        <img src="images/card-3.png" alt="card__img-3" class="card__img">
+                        <div class="card__box">
+                            <h3 class="heading-3">Clever Poster</h3>
+                            <p class="paragraph-3">Print Design</p>
                         </div>
-                        <div class="card__container">
-                            <img src="images/card-4.png" alt="card__img-4" class="card__img">
-                            <div class="card__box">
-                                <h3 class="heading-3">Vinyl Record</h3>
-                                <p class="paragraph-3">Product Mock-Up</p>
-                            </div>
+                    </div>
+                    <div class="card__container">
+                        <img src="images/card-4.png" alt="card__img-4" class="card__img">
+                        <div class="card__box">
+                            <h3 class="heading-3">Vinyl Record</h3>
+                            <p class="paragraph-3">Product Mock-Up</p>
                         </div>
-                        <div class="card__container">
-                            <img src="images/card-5.png" alt="card__img-5" class="card__img">
-                            <div class="card__box">
-                                <h3 class="heading-3">Treehouse Template</h3>
-                                <p class="paragraph-3">Web Design</p>
-                            </div>
+                    </div>
+                    <div class="card__container">
+                        <img src="images/card-5.png" alt="card__img-5" class="card__img">
+                        <div class="card__box">
+                            <h3 class="heading-3">Treehouse Template</h3>
+                            <p class="paragraph-3">Web Design</p>
                         </div>
-                        <div class="card__container">
-                            <img src="images/card-6.png" alt="card__img-6" class="card__img">
-                            <div class="card__box">
-                                <h3 class="heading-3">Burned Logo</h3>
-                                <p class="paragraph-3">Branding</p>
-                            </div>
+                    </div>
+                    <div class="card__container">
+                        <img src="images/card-6.png" alt="card__img-6" class="card__img">
+                        <div class="card__box">
+                            <h3 class="heading-3">Burned Logo</h3>
+                            <p class="paragraph-3">Branding</p>
                         </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="about" id="about">
-            <div class="container">
-                <h2 class="heading-2">About us</h2>
-                <p class="paragraph-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="about__timeline">
-                    <div class="about__box u-margin-top-big">
-                        <div class="about__text about__text--right">
-                            <h4 class="heading-4">July 2010</h4>
-                            <h3 class="heading-3 u-margin-bottom">Our Humble Beginings</h3>
-                            <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores ipsa placeat aut perferendis? Quas repellendus voluptatem temporibus itaque obcaecati est dolorum impedit beatae totam. Hic quae quibusdam magni sunt!</p>
-                        </div>
-                        <img src="images/about-2.jpg" alt="about__img-2" class="about__img">
-                        <div class="about__filler"></div>
+        <section class="about container" id="about">
+            <h2 class="heading-2">About us</h2>
+            <p class="paragraph-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <div class="about__timeline">
+                <div class="about__box u-margin-top-big">
+                    <div class="about__text about__text--right">
+                        <h4 class="heading-4">July 2010</h4>
+                        <h3 class="heading-3 u-margin-bottom">Our Humble Beginings</h3>
+                        <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores ipsa placeat aut perferendis? Quas repellendus voluptatem temporibus itaque obcaecati est dolorum impedit beatae totam. Hic quae quibusdam magni sunt!</p>
                     </div>
-                    <div class="about__box u-margin-top-big">
-                        <div class="about__filler"></div>
-                        <img src="images/about-3.jpg" alt="about__img-3" class="about__img">
-                        <div class="about__text about__text--left">
-                            <h4 class="heading-4">Januray 2011</h4>
-                            <h3 class="heading-3 u-margin-bottom">Facing Startup Battles</h3>
-                            <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores ipsa placeat aut perferendis? Quas repellendus voluptatem temporibus itaque obcaecati est dolorum impedit beatae totam. Hic quae quibusdam magni sunt!</p>
-                        </div>
-                    </div>
-                    <div class="about__box u-margin-top-big">
-                        <div class="about__text about__text--right">
-                            <h4 class="heading-4">December 2012</h4>
-                            <h3 class="heading-3 u-margin-bottom">Enter The Dark Days</h3>
-                            <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores ipsa placeat aut perferendis? Quas repellendus voluptatem temporibus itaque obcaecati est dolorum impedit beatae totam. Hic quae quibusdam magni sunt!</p>
-                        </div>
-                        <img src="images/about-4.jpg" alt="about__img-4" class="about__img">
-                        <div class="about__filler"></div>
-                    </div>
-                    <div class="about__box u-margin-top-big">
-                        <div class="about__filler"></div>
-                        <img src="images/about-1.jpg" alt="about__img-1" class="about__img">
-                        <div class="about__text about__text--left">
-                            <h4 class="heading-4">February 2014</h4>
-                            <h3 class="heading-3 u-margin-bottom">Our Triumph</h3>
-                            <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores ipsa placeat aut perferendis? Quas repellendus voluptatem temporibus itaque obcaecati est dolorum impedit beatae totam. Hic quae quibusdam magni sunt!</p>
-                        </div>
-                    </div>
-                    <div class="about__box u-margin-top-big">
-                        <div class="about__circle">
-                            <span class="about__span">Our</span>
-                            <span class="about__span">Story</span>
-                            <span class="about__span">Continue</span>
-                            <span class="about__span">...</span>
-                        </div>
+                    <img src="images/about-2.jpg" alt="about__img-2" class="about__img">
+                    <!-- <div class="about__filler"></div> -->
+                </div>
+                <div class="about__box u-margin-top-big">
+                    <!-- <div class="about__filler"></div> -->
+                    <img src="images/about-3.jpg" alt="about__img-3" class="about__img">
+                    <div class="about__text about__text--left">
+                        <h4 class="heading-4">Januray 2011</h4>
+                        <h3 class="heading-3 u-margin-bottom">Facing Startup Battles</h3>
+                        <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores ipsa placeat aut perferendis? Quas repellendus voluptatem temporibus itaque obcaecati est dolorum impedit beatae totam. Hic quae quibusdam magni sunt!</p>
                     </div>
                 </div>
-
+                <div class="about__box u-margin-top-big">
+                    <div class="about__text about__text--right">
+                        <h4 class="heading-4">December 2012</h4>
+                        <h3 class="heading-3 u-margin-bottom">Enter The Dark Days</h3>
+                        <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores ipsa placeat aut perferendis? Quas repellendus voluptatem temporibus itaque obcaecati est dolorum impedit beatae totam. Hic quae quibusdam magni sunt!</p>
+                    </div>
+                    <img src="images/about-4.jpg" alt="about__img-4" class="about__img">
+                    <!-- <div class="about__filler"></div> -->
+                </div>
+                <div class="about__box u-margin-top-big">
+                    <!-- <div class="about__filler"></div> -->
+                    <img src="images/about-1.jpg" alt="about__img-1" class="about__img">
+                    <div class="about__text about__text--left">
+                        <h4 class="heading-4">February 2014</h4>
+                        <h3 class="heading-3 u-margin-bottom">Our Triumph</h3>
+                        <p class="paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores ipsa placeat aut perferendis? Quas repellendus voluptatem temporibus itaque obcaecati est dolorum impedit beatae totam. Hic quae quibusdam magni sunt!</p>
+                    </div>
+                </div>
+                <div class="about__box">
+                    <div class="about__circle">
+                        Our<br>
+                        Story<br>
+                        Contine<br>
+                        ...<br>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="team">
@@ -205,13 +198,13 @@
                 </div>
             </div>
         </section>
-        <section class="logotypes">
-            <div class="container">
-                <img src="images/logo-1.png" alt="logo-1" class="logotypes__img">
-                <img src="images/logo-2.png" alt="logo-2" class="logotypes__img">
-                <img src="images/logo-3.png" alt="logo-3" class="logotypes__img">
-                <img src="images/logo-4.png" alt="logo-4" class="logotypes__img">
-            </div>
+        <section class="logotypes container">
+            <ul class="logotypes__list">
+                <li class="logotypes__item"><img src="images/logo-1.png" alt="logo-1" class="logotypes__img"></li>
+                <li class="logotypes__item"><img src="images/logo-2.png" alt="logo-2" class="logotypes__img"></li>
+                <li class="logotypes__item"><img src="images/logo-3.png" alt="logo-3" class="logotypes__img"></li>
+                <li class="logotypes__item"><img src="images/logo-4.png" alt="logo-4" class="logotypes__img"></li>
+            </ul>
         </section>
         <section class="contact" id="contact">
             <div class="container">
@@ -230,19 +223,16 @@
                 <button type="submit" class="btn u-margin-top-medium">Send message</button>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__box">
-                    <div class="footer__text">
-                        &copy; Copyright 2018 FreebiesXpress.com
-                    </div>
-                    <div class="footer__social">
-                        <a href="#" class="footer__link"><i class="footer__icon fab fa-twitter"></i></a>
-                        <a href="#" class="footer__link"><i class="footer__icon fab fa-facebook-f"></i></a>
-                        <a href="#" class="footer__link"><i class="footer__icon fab fa-pinterest-p"></i></a>
-                        <a href="#" class="footer__link"><i class="footer__icon fab fa-google-plus-g"></i></a>
-                    </div>
-                    <div class="footer__filler"></div>
+        <footer class="footer container">
+            <div class="footer__box">
+                <div class="footer__text">
+                    &copy; Copyright 2018 FreebiesXpress.com
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__link"><i class="footer__icon fab fa-twitter"></i></a>
+                    <a href="#" class="footer__link"><i class="footer__icon fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__link"><i class="footer__icon fab fa-pinterest-p"></i></a>
+                    <a href="#" class="footer__link"><i class="footer__icon fab fa-google-plus-g"></i></a>
                 </div>
             </div>
         </footer>   

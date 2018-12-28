@@ -77,7 +77,6 @@
             color: $color-primary;
             font-size: 2rem;
             border-bottom: 1px solid $color-primary;
-            width: 100%;
             padding: 1rem 0;
             display: block;
         }
@@ -93,6 +92,9 @@ input[type="checkbox"]:checked ~ .hidden__menu {
 }
 
 .hidden {
+    display: block;
+    top: 0;
+    width: 100%;
 
     &__toggle {
         display: none;
@@ -120,7 +122,6 @@ input[type="checkbox"]:checked ~ .hidden__menu {
         display: none;
         top: 0;
         background-color: $color-black;
-        width: 100%;
         overflow: hidden;
     }
 }

@@ -9,16 +9,23 @@
         align-items: center;
         justify-content: space-between;
 
+        @include respond(break-xl) {
+            padding: 0 1rem;
+        }
+
         @include respond(break-l) {
+            padding: 0;
             flex-direction: column;
+            text-align: center;
         }
     }
 
     &__text {
-        flex-grow: 1;
+        width: 25%;
 
         @include respond(break-l) {
             margin-bottom: 3rem;
+            width: 100%;
         }
 
         @include respond(break-s) {
@@ -27,18 +34,16 @@
     }
 
     &__social {
-        flex-grow: 1;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    &__filler {
-        flex-grow: 3;
+        width: 50%;
+        margin-right: 25%;
 
         @include respond(break-l) {
-            display: none;
+            margin-right: 0;
+            width: 100%;
         }
     }
 
