@@ -59,7 +59,6 @@
       flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
-  margin-bottom: 15rem;
 }
 
 .about__box:nth-of-type(even) {
@@ -156,20 +155,6 @@
         order: 0;
     width: 15rem;
     height: 15rem;
-  }
-}
-
-.about__img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-@media only screen and (max-width: 991px) {
-  .about__img {
-    position: relative;
-    left: 0;
-    transform: none;
   }
 }
 

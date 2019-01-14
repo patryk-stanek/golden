@@ -26,7 +26,6 @@
     &__box {
         @include flexbox;
         align-items: center;
-        margin-bottom: 15rem;
 
         &:nth-of-type(even) {
             justify-content: flex-end;
@@ -100,18 +99,6 @@
             order: 0;
             width: 15rem;
             height: 15rem;
-        }
-    }
-
-    &__img {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-
-        @include respond(break-l) {
-            position: relative;
-            left: 0;
-            transform: none;
         }
     }
 
